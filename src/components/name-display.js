@@ -5,8 +5,8 @@ export default function NameDisplay() {
   const [name] = useContext(AppContext);
 
   return (
-    <section>
-      <h1>Witaj {name}</h1>
+    <section className="name-display">
+      <h1>Hello {name}</h1>
     </section>
   );
 }

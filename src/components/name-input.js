@@ -11,7 +11,7 @@ export default function NameInput() {
   };
 
   return (
-    <section>
+    <section className="name-input">
       <input
         type="text"
         placeholder="Enter Your Name"
