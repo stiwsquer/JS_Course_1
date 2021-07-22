@@ -7,10 +7,10 @@ import NameInput from "./components/name-input";
 function App() {
   return (
     <AppContextProvider>
-      <div className="main">
+      <main className="main">
         <NameDisplay />
         <NameInput />
-      </div>
+      </main>
     </AppContextProvider>
   );
 }

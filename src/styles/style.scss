@@ -8,6 +8,9 @@ html {
   font-size: 62.5%;
   background: linear-gradient(#38d39f, #38a4d3);
 }
+#root {
+  width: 100vw;
+}
 
 @mixin flex($direction, $justify, $align) {
   display: flex;
@@ -19,12 +22,11 @@ html {
 .main {
   @include flex(column, center, center);
   width: 60%;
-  margin: 10vh 20% 10vh 20%;
+  margin: 10vh 20%;
   min-height: 80vh;
-  box-shadow: 0px 1px 4px rgba($color: #000000, $alpha: 0.2),
-    0px 10px 20px rgba($color: #000000, $alpha: 0.2);
+  box-shadow: 0px 1px 10px rgba($color: #000000, $alpha: 0.5),
+    0px 10px 20px rgba($color: #000000, $alpha: 0.5);
   background: white;
-  //   position: relative;
 }
 
 .name-input input {
@@ -42,5 +44,17 @@ html {
     background: linear-gradient(#38d39f, #38a4d3);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .name-input input {
+    font-size: 2rem;
+    padding: 1rem 0.5rem;
+  }
+
+  .main {
+    width: 100%;
+    margin: 10vh 0rem;
   }
 }
