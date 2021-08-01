@@ -1,0 +1,45 @@
+.nav-links {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+
+  min-height: 15vh;
+  //   background: chocolate;
+  position: relative;
+  width: 95%;
+  margin: auto;
+  @include flex(row, space-between, center);
+  li {
+    font-size: $nav-links;
+    margin: 2rem 1rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+  border-bottom: 0.1rem solid black;
+
+  a:hover {
+    color: #f8bb99;
+  }
+}
+
+.logo-cart {
+  flex: 5;
+  li {
+    text-align: end;
+  }
+  .logo {
+    font-size: $header1;
+    position: absolute;
+    left: 50%;
+
+    bottom: 50%;
+    transform: translateX(-50%) translateY(50%);
+    a:hover {
+      color: black;
+    }
+  }
+}
+
+.signIn-register-search {
+  flex: 1;
+  @include flex(row, space-between, center);
+}
