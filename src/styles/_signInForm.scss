@@ -1,0 +1,40 @@
+.sign-in-page {
+  @include flex(row, center, center);
+  min-height: 55vh;
+  font-size: $small-text;
+}
+
+.sign-in-form {
+  @include flex(column, center, flex-start);
+  label {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  input {
+    outline: none;
+    border: 0.1rem solid rgba($color: #000000, $alpha: 0.5);
+    padding: 1rem 30rem 1rem 1rem;
+  }
+  a {
+    text-decoration: underline;
+  }
+  margin: 5rem;
+}
+
+.new-customer-info {
+  padding: 3rem;
+
+  li {
+    margin: 0.5rem 4rem;
+  }
+  h3 {
+    margin: 2rem 0rem;
+  }
+  border: 0.1rem solid rgba($color: #000000, $alpha: 0.5);
+}
+
+.new-customer-info-wrapper {
+  padding: 2rem;
+  background: rgba($color: #000000, $alpha: 0.1);
+}

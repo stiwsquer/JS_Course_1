@@ -1,5 +1,61 @@
 footer {
   background: #202020;
+
   color: white;
+}
+.social-media {
+  color: white;
+  font-size: 3rem;
+  opacity: 0.5;
+  &:hover {
+    color: #f8bb99;
+  }
+}
+
+.footer-wrapper {
+  min-height: 15vh;
+  width: 95%;
+  margin: auto;
+  @include flex(row, space-between, center);
+
+  h1 {
+    flex: 2;
+    margin: 2rem 0rem;
+  }
+
+  ul {
+    flex: 1;
+    @include flex(row, space-around, center);
+    list-style: none;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+.newsletter-form {
   min-height: 10vh;
+  width: 95%;
+  margin: auto;
+  @include flex(row, space-between, center);
+  h4 {
+    font-size: $header4;
+  }
+
+  p {
+    font-size: $header4;
+  }
+
+  input {
+    outline: none;
+    border: 0.1rem solid rgba($color: #000000, $alpha: 0.5);
+    padding: 1rem 30rem 1rem 1rem;
+  }
+
+  button {
+    letter-spacing: 0.2rem;
+    padding: 1rem 5rem;
+    border: 0.1rem solid rgba($color: #000000, $alpha: 1);
+  }
 }

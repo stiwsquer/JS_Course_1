@@ -1,28 +1,21 @@
 import React from "react";
-
+import NavItem from "./NavItem";
 export default function Footer(props) {
   return (
     <footer>
       <div className="footer-wrapper">
-        <h5>DressUp &copy;</h5>
+        <h1>
+          <NavItem text="DressUp" linkTo="#" /> &copy;
+        </h1>
         <ul>
           <li>
-            <a href="#" title="twitter-social-media">
-              {/* <img src="../icons/twitter.svg" alt="twitter-social-media" /> */}
-            </a>
+            <NavItem iconClass="fab fa-twitter social-media" linkTo="#" />
           </li>
           <li>
-            <a href="#" title="youtube-social-media">
-              {/* <img src="../icons/youtube.svg" alt="youtube-social-media" /> */}
-            </a>
+            <NavItem iconClass="fab fa-instagram social-media" linkTo="#" />
           </li>
           <li>
-            <a href="#" title="instagram-social-media">
-              <img
-                src={require("../icons/heart.png")}
-                alt="instagram-social-media"
-              />
-            </a>
+            <NavItem iconClass="fab fa-youtube social-media" linkTo="#" />
           </li>
         </ul>
       </div>
