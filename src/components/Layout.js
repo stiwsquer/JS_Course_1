@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import Home from "./Home";
 import NewsletterForm from "./NewsletterForm";
 import SignIn from "./SignIn";
+import Register from "./Register";
 
 export default function Layout(props) {
   return (
@@ -16,7 +17,9 @@ export default function Layout(props) {
           <Route path="/signIn">
             <SignIn />
           </Route>
-          <Route path="/register">{/* <Register /> */}</Route>
+          <Route path="/register">
+            <Register />
+          </Route>
           <Route path="/">
             <Home />
           </Route>

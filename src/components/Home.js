@@ -1,4 +1,7 @@
 import React from "react";
+import gallery1 from "../images/gallery-1.2.jpg";
+import gallery2 from "../images/gallery-2.1.jpg";
+import gallery3 from "../images/gallery-3.1.jpg";
 
 export default function Home(props) {
   return (
@@ -25,6 +28,28 @@ export default function Home(props) {
           BOUTIQUES IN THE UNITED STATES!{" "}
         </p>
         <button>SHOP OUR NEWEST ARRIVALS</button>
+      </section>
+      <section className="home-gallery">
+        <div className="gallery-new-shoes">
+          <h2>NEW SHOES</h2>
+          <p>
+            We just dropped new fall shoe styles, and they are all ON SALE! Shop
+            new combat boots, booties, mules, sneakers & more!
+          </p>
+          <button>SHOP SHOES</button>
+        </div>
+        <div className="gallery-accessories">
+          <h2>Accessories</h2>
+          <p>
+            Take your fall outfit to the next level with new accessories! The
+            perfect trendy handbag, dainty gold necklace, coin bracelet or
+            statement earrings will upgrade any look.
+          </p>
+          <button>SHOP ACCESSORIES</button>
+        </div>
+        <img className="gallery1" src={gallery1} />
+        <img className="gallery2" src={gallery2} />
+        <img className="gallery3" src={gallery3} />
       </section>
     </>
   );

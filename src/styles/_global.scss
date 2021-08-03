@@ -46,9 +46,17 @@ button {
     opacity: 0.8;
   }
 }
+
 @mixin flex($direction, $justify, $align) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
+}
+.input-wrapper {
+  @include flex(column, center, flex-start);
+}
+
+.select-wrapper {
+  @include flex(column, stretch, flex-start);
 }

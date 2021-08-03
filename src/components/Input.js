@@ -8,7 +8,7 @@ export default function Input({
   placeholder,
 }) {
   return (
-    <>
+    <div className="input-wrapper">
       <label htmlFor={inputId}>{labelText}</label>
       {isRequired && (
         <input
@@ -21,6 +21,6 @@ export default function Input({
       {!isRequired && (
         <input id={inputId} type={inputType} placeholder={placeholder} />
       )}
-    </>
+    </div>
   );
 }

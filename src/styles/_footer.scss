@@ -7,6 +7,7 @@ footer {
   color: white;
   font-size: 3rem;
   opacity: 0.5;
+  margin: 2rem;
   &:hover {
     color: #f8bb99;
   }
@@ -17,14 +18,15 @@ footer {
   width: 95%;
   margin: auto;
   @include flex(row, space-between, center);
+  flex-wrap: wrap;
 
   h1 {
-    flex: 2;
+    flex: 2 1 40rem;
     margin: 2rem 0rem;
   }
 
   ul {
-    flex: 1;
+    flex: 1 2 40rem;
     @include flex(row, space-around, center);
     list-style: none;
   }
@@ -39,23 +41,68 @@ footer {
   width: 95%;
   margin: auto;
   @include flex(row, space-between, center);
+  flex-wrap: wrap;
   h4 {
     font-size: $header4;
+    margin-top: 2rem;
   }
 
   p {
     font-size: $header4;
+    margin-top: 2rem;
+    text-align: center;
   }
 
+  div {
+    @include flex(row, center, center);
+  }
   input {
     outline: none;
     border: 0.1rem solid rgba($color: #000000, $alpha: 0.5);
     padding: 1rem 30rem 1rem 1rem;
+    margin: 2rem 0rem;
   }
 
   button {
     letter-spacing: 0.2rem;
     padding: 1rem 5rem;
     border: 0.1rem solid rgba($color: #000000, $alpha: 1);
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  .newsletter-form {
+    div {
+      flex-wrap: wrap;
+
+      input,
+      button {
+        flex: 0 0 20rem;
+      }
+
+      button {
+        margin-bottom: 2rem;
+      }
+
+      input {
+        width: 95vw;
+        padding: 1rem 5rem 1rem 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1378px) {
+  .newsletter-form {
+    @include flex(column, space-between, center);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .footer-wrapper {
+    h1 {
+      text-align: center;
+    }
   }
 }
