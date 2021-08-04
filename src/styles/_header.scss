@@ -1,6 +1,5 @@
 .nav-links {
   min-height: 15vh;
-  // background: chocolate;
   position: relative;
   width: 95%;
   margin: auto;
@@ -32,10 +31,31 @@
     left: 50%;
 
     bottom: 50%;
-    transform: translateX(-50%) translateY(30%);
+    // transform: translateX(-50%) translateY(30%);
+    transform: translateX(-50%) translateY(-200%);
     a:hover {
       color: black;
     }
+
+    animation: logo-animation 1s ease-in-out 0.5s forwards;
+  }
+}
+
+@keyframes logo-animation {
+  // from {
+  //   font-size: 0rem;
+  //   opacity: 0;
+  // }
+  // to {
+  //   font-size: $header1;
+  //   opacity: 1;
+  // }
+
+  0% {
+    transform: translateX(-50%) translateY(-200%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(30%);
   }
 }
 

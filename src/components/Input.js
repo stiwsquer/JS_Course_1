@@ -6,6 +6,8 @@ export default function Input({
   inputId,
   inputType,
   placeholder,
+  inputValue,
+  onInputChange,
 }) {
   return (
     <div className="input-wrapper">
@@ -15,6 +17,8 @@ export default function Input({
           id={inputId}
           type={inputType}
           placeholder={placeholder}
+          value={inputValue}
+          onChange={onInputChange}
           required
         />
       )}
