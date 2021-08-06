@@ -5,3 +5,13 @@
 @import "signInForm";
 @import "registerForm";
 @import "searchBox";
+
+nav {
+  @include flex(row, space-between, center);
+  width: 95%;
+  margin: auto;
+
+  li {
+    list-style: none;
+  }
+}

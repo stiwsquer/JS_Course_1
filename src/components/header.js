@@ -1,13 +1,10 @@
-import React, { useContext } from "react";
-import Navigation from "./Navigation";
-// import { SearchContext } from "../context/SearchContext";
+import React from "react";
+import Navigation from "./NavigationV2";
 
 export default function Header(props) {
-  // const [input] = useContext(SearchContext);
   return (
     <header className="main-head">
       <Navigation />
-      {/* <h1>Hello {input}</h1> */}
       <section className="sections"></section>
     </header>
   );
