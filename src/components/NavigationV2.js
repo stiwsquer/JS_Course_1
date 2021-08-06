@@ -3,12 +3,18 @@ import NavItem from "./NavItem";
 import SearchBox from "./SearchBox";
 import SignInRegisterSearch from "./SignInRegisterSearch";
 
+/**
+ *  TODO: change width conditionals to css and className changing 
+ */
+
 export default function Navigation(props) {
   const [showMenu, setShowMenu] = useState(false);
   const [showSearch, setShowSerch] = useState(false);
   const [width, height] = useWindowSize();
 
   const mobileMenuStyle = { display: "flex" };
+
+  const handleShowMenu = () => setShowMenu(prev => !prev);
 
   if (width > 1000) {
     mobileMenuStyle.display = "flex";
@@ -32,11 +38,12 @@ export default function Navigation(props) {
   return (
     <>
       <nav className="nav-links">
-        <span className="burger" onClick={() => setShowMenu(!showMenu)}>
+        <span className="burger" onClick={handleShowMenu}>
           {burger}
         </span>
 
         <SignInRegisterSearch
+          className={showMenu ? 'visible' : 'invisible'}
           mobileMenuStyle={mobileMenuStyle}
           setShowMenu={setShowMenu}
           showMenu={showMenu}

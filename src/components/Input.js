@@ -1,5 +1,9 @@
 import React from "react";
 
+/**
+ * TODO: labelText -> children
+ */
+
 export default function Input({
   labelText,
   isRequired,
@@ -12,19 +16,14 @@ export default function Input({
   return (
     <div className="input-wrapper">
       <label htmlFor={inputId}>{labelText}</label>
-      {isRequired && (
         <input
           id={inputId}
           type={inputType}
           placeholder={placeholder}
           value={inputValue}
           onChange={onInputChange}
-          required
+          required={isRequired}
         />
-      )}
-      {!isRequired && (
-        <input id={inputId} type={inputType} placeholder={placeholder} />
-      )}
     </div>
   );
 }
