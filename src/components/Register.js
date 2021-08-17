@@ -31,102 +31,60 @@ export default function Register({ months }) {
   return (
     <section className="register">
       <form>
-        <Input
-          isRequired={true}
-          inputType="email"
-          labelText="Email Adress"
-          inputId="email"
-        />
-        <Input
-          isRequired={true}
-          inputType="password"
-          labelText="Password"
-          inputId="password"
-        />
-        <Input
-          isRequired={true}
-          inputType="password"
-          labelText="Confirm Password"
-          inputId="confirm_password"
-        />
+        <Input isRequired={true} inputType="email" inputId="email">
+          Email Adress
+        </Input>
 
+        <Input isRequired={true} inputType="password" inputId="password">
+          Password
+        </Input>
+        <Input
+          isRequired={true}
+          inputType="password"
+          inputId="confirm_password"
+        >
+          Confirm Password
+        </Input>
         <Select
           options={countryOptions}
           isRequired={true}
-          labelText="Birth Month"
           placeholder="Please Select Your Birth Month"
           selectId="birth-month"
-        />
+        >
+          Birth Month
+        </Select>
 
-        <Input
-          isRequired={true}
-          inputType="text"
-          labelText="First Name"
-          inputId="first-name"
-        />
+        <Input isRequired={true} inputType="text" inputId="first-name">
+          First Name
+        </Input>
+        <Input isRequired={true} inputType="text" inputId="last-name">
+          Last Name
+        </Input>
+        <Input isRequired={true} inputType="text" inputId="company-name">
+          Company Name
+        </Input>
+        <Input isRequired={true} inputType="tel" inputId="phone-number">
+          Phone Number
+        </Input>
+        <Input isRequired={true} inputType="text" inputId="adress-line-1">
+          Adress Line 1
+        </Input>
+        <Input isRequired={true} inputType="text" inputId="adress-line-2">
+          Adress Line 2
+        </Input>
+        <Input isRequired={true} inputType="text" inputId="city">
+          Suburb/City
+        </Input>
+        <Select options={countryOptions} isRequired={true} selectId="country">
+          Country
+        </Select>
 
-        <Input
-          isRequired={true}
-          inputType="text"
-          labelText="Last Name"
-          inputId="last-name"
-        />
-
-        <Input
-          isRequired={true}
-          inputType="text"
-          labelText="Company Name"
-          inputId="company-name"
-        />
-
-        <Input
-          isRequired={true}
-          inputType="tel"
-          labelText="Phone Number"
-          inputId="phone-number"
-        />
-
-        <Input
-          isRequired={true}
-          inputType="text"
-          labelText="Adress Line 1"
-          inputId="adress-line-1"
-        />
-
-        <Input
-          isRequired={true}
-          inputType="text"
-          labelText="Adress Line 2"
-          inputId="adress-line-2"
-        />
-
-        <Input
-          isRequired={true}
-          inputType="text"
-          labelText="Suburb/City"
-          inputId="city"
-        />
-
-        <Select
-          options={countryOptions}
-          isRequired={true}
-          labelText="Country"
-          selectId="country"
-        />
-
-        <Input
-          isRequired={true}
-          inputType="text"
-          labelText="State/Province"
-          inputId="state"
-        />
-
-        <Input
-          isRequired={true}
-          inputType="text"
-          labelText="Zip/Postcode"
-          inputId="zip"
-        />
+        <Input isRequired={true} inputType="text" inputId="state">
+          State/Province
+        </Input>
+        <Input isRequired={true} inputType="text" inputId="zip">
+          Zip/Postcode
+        </Input>
         <button type="submit">CREATE ACCOUNT</button>
       </form>
     </section>

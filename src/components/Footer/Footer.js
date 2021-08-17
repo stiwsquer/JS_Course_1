@@ -1,7 +1,8 @@
 import React from "react";
-import NavItem from "./NavItem";
+import NavItem from "../NavItem";
+import "./style.scss";
 
-export default function Footer() {
+export default function Footer(props) {
   return (
     <footer>
       <div className="footer-wrapper">

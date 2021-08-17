@@ -1,43 +1,32 @@
-import React, { useLayoutEffect, useState, useContext } from "react";
+import React, { useLayoutEffect, useState, useContext, useRef } from "react";
 import NavItem from "./NavItem";
 import SearchBox from "./SearchBox";
 import SignInRegisterSearch from "./SignInRegisterSearch";
 
-export default function Navigation(props) {
+export default function Navigation() {
   const [showMenu, setShowMenu] = useState(false);
   const [showSearch, setShowSerch] = useState(false);
-  const [width, height] = useWindowSize();
+  const [width, height] = useWindowSize([0, 0]);
 
-  const mobileMenuStyle = { display: "flex" };
+  const handleShowMenu = () => setShowMenu((prev) => !prev);
 
-  if (width > 1000) {
-    mobileMenuStyle.display = "flex";
-  } else if (width <= 1000 && showMenu === false) {
-    mobileMenuStyle.display = "none";
-  }
-
-  let burger = <i className="fas fa-bars"></i>;
-  if (showMenu === true) {
-    burger = <i className="fas fa-times" style={{ position: "fixed" }}></i>;
-    mobileMenuStyle.display = "flex";
-  }
-
-  let searchBox;
-  if (showSearch === true) {
-    searchBox = (
-      <SearchBox showSearch={showSearch} setShowSerch={setShowSerch} />
-    );
+  let signInRegisterSearchClassName = "signIn-register-search";
+  if (width < 1000 && !showMenu) {
+    signInRegisterSearchClassName = "inactive-signIn-register-search";
   }
 
   return (
     <>
       <nav className="nav-links">
-        <span className="burger" onClick={() => setShowMenu(!showMenu)}>
-          {burger}
+        <span className="burger" onClick={handleShowMenu}>
+          <i
+            style={{ position: showMenu ? "fixed" : "" }}
+            className={showMenu ? "fas fa-times" : "fas fa-bars"}
+          ></i>
         </span>
 
         <SignInRegisterSearch
-          mobileMenuStyle={mobileMenuStyle}
+          nameOfTheClass={signInRegisterSearchClassName}
           setShowMenu={setShowMenu}
           showMenu={showMenu}
           setShowSerch={setShowSerch}
@@ -52,7 +41,11 @@ export default function Navigation(props) {
           <NavItem linkTo="#" iconClass="fas fa-shopping-cart" text="Cart" />
         </div>
       </nav>
-      {searchBox}
+      <SearchBox
+        nameOfTheClass={showSearch ? "search-box" : "inactive-search"}
+        showSearch={showSearch}
+        setShowSerch={setShowSerch}
+      />
     </>
   );
 }

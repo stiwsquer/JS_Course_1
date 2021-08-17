@@ -51,6 +51,10 @@ button {
   }
 }
 
+.fas {
+  cursor: pointer;
+}
+
 @mixin flex($direction, $justify, $align) {
   display: flex;
   flex-direction: $direction;

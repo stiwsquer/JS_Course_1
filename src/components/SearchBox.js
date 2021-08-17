@@ -6,6 +6,7 @@ export default function SearchBar({
   setShowSerch,
   focus,
   setFocus,
+  nameOfTheClass,
 }) {
   const [input, setInput] = useContext(SearchContext);
 
@@ -14,17 +15,17 @@ export default function SearchBar({
   };
 
   return (
-    <div className="search-box">
-      {/* Why is it not working? */}
-      {/* <Input
+    <div className={nameOfTheClass}>
+      <Input
         inputValue={input}
         onInputChange={handleChange}
         inputId="search"
         inputType="search"
         placeholder="Search"
-      /> */}
+        autoFocus={true}
+      />
 
-      <input
+      {/* <input
         placeholder="Search"
         type="text"
         value={input}
@@ -34,7 +35,7 @@ export default function SearchBar({
           setShowSerch(false);
         }}
         // autoFocus={focus}
-      />
+      /> */}
     </div>
   );
 }

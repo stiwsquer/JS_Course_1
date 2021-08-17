@@ -1,30 +1,28 @@
 import React from "react";
 
 export default function Input({
-  labelText,
   isRequired,
   inputId,
   inputType,
   placeholder,
   inputValue,
   onInputChange,
+  autoFocus,
+  children,
 }) {
   return (
     <div className="input-wrapper">
-      <label htmlFor={inputId}>{labelText}</label>
-      {isRequired && (
-        <input
-          id={inputId}
-          type={inputType}
-          placeholder={placeholder}
-          value={inputValue}
-          onChange={onInputChange}
-          required
-        />
-      )}
-      {!isRequired && (
-        <input id={inputId} type={inputType} placeholder={placeholder} />
-      )}
+      <label htmlFor={inputId}>{children}</label>
+
+      <input
+        id={inputId}
+        type={inputType}
+        placeholder={placeholder}
+        value={inputValue}
+        onChange={onInputChange}
+        required={isRequired}
+        autoFocus={autoFocus}
+      />
     </div>
   );
 }

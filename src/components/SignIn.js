@@ -7,16 +7,20 @@ export default function SignIn(props) {
         <Input
           isRequired={true}
           inputType="email"
-          labelText="Email Address:"
+          // labelText="Email Address:"
           inputId="email"
-        />
+        >
+          Email Address:
+        </Input>
 
         <Input
           isRequired={true}
           inputType="password"
-          labelText="Password:"
+          // labelText="Password:"
           inputId="password"
-        />
+        >
+          Password:
+        </Input>
 
         <button>SIGN IN</button>
         <a href="#">Forgot your password?</a>

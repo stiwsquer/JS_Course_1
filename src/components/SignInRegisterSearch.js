@@ -7,10 +7,12 @@ export default function SignInRegisterSearch({
   showMenu,
   setShowSerch,
   showSearch,
+  nameOfTheClass,
 }) {
+  const handleShowMenu = () => setShowMenu((prev) => !prev);
   return (
-    <ul className="signIn-register-search" style={mobileMenuStyle}>
-      <li onClick={() => setShowMenu(!showMenu)}>
+    <ul className={nameOfTheClass}>
+      <li onClick={handleShowMenu}>
         <NavItem
           linkTo="/signIn"
           iconClass="fas fa-sign-in-alt"
@@ -18,7 +20,7 @@ export default function SignInRegisterSearch({
         />
       </li>
       <li className="vertical-line">|</li>
-      <li onClick={() => setShowMenu(!showMenu)}>
+      <li onClick={handleShowMenu}>
         <NavItem linkTo="/register" text="Register" />
       </li>
       <li className="vertical-line">|</li>
