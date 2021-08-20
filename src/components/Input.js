@@ -13,7 +13,6 @@ export default function Input({
   return (
     <div className="input-wrapper">
       <label htmlFor={inputId}>{children}</label>
-
       <input
         id={inputId}
         type={inputType}

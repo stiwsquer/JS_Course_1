@@ -1,5 +1,6 @@
 import React, { useLayoutEffect, useState, useContext, useRef } from "react";
 import NavItem from "./NavItem";
+import OutsideAlerter from "./OutsideAlerter";
 import SearchBox from "./SearchBox";
 import SignInRegisterSearch from "./SignInRegisterSearch";
 
@@ -41,11 +42,13 @@ export default function Navigation() {
           <NavItem linkTo="#" iconClass="fas fa-shopping-cart" text="Cart" />
         </div>
       </nav>
-      <SearchBox
-        nameOfTheClass={showSearch ? "search-box" : "inactive-search"}
-        showSearch={showSearch}
-        setShowSerch={setShowSerch}
-      />
+      <OutsideAlerter setShowSerch={setShowSerch}>
+        <SearchBox
+          nameOfTheClass={showSearch ? "search-box" : "inactive-search"}
+          showSearch={showSearch}
+          setShowSerch={setShowSerch}
+        />
+      </OutsideAlerter>
     </>
   );
 }

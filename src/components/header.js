@@ -4,6 +4,7 @@ import Navigation from "./NavigationV2";
 
 export default function Header(props) {
   const [input] = useContext(SearchContext);
+
   return (
     <header className="main-head">
       <Navigation />

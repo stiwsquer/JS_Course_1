@@ -1,5 +1,6 @@
 import React from "react";
 import NavItem from "./NavItem";
+import OutsideAlerter from "./OutsideAlerter";
 
 export default function SignInRegisterSearch({
   mobileMenuStyle,
@@ -24,6 +25,7 @@ export default function SignInRegisterSearch({
         <NavItem linkTo="/register" text="Register" />
       </li>
       <li className="vertical-line">|</li>
+
       <li
         onClick={() => {
           setShowMenu(!showMenu);
