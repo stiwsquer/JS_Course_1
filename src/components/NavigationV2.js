@@ -18,36 +18,43 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className="nav-links">
-        <span className="burger" onClick={handleShowMenu}>
-          <i
-            style={{ position: showMenu ? "fixed" : "" }}
-            className={showMenu ? "fas fa-times" : "fas fa-bars"}
-          ></i>
-        </span>
-
-        <SignInRegisterSearch
-          nameOfTheClass={signInRegisterSearchClassName}
-          setShowMenu={setShowMenu}
-          showMenu={showMenu}
-          setShowSerch={setShowSerch}
-          showSearch={showSearch}
-        />
-
-        <h1 className="logo">
-          <NavItem linkTo="/" text="DressUp" />
-        </h1>
-
-        <div className="cart">
-          <NavItem linkTo="#" iconClass="fas fa-shopping-cart" text="Cart" />
-        </div>
-      </nav>
       <OutsideAlerter setShowSerch={setShowSerch}>
-        <SearchBox
-          nameOfTheClass={showSearch ? "search-box" : "inactive-search"}
-          showSearch={showSearch}
-          setShowSerch={setShowSerch}
-        />
+        <div>
+          <nav className="nav-links">
+            <span className="burger" onClick={handleShowMenu}>
+              <i
+                style={{ position: showMenu ? "fixed" : "" }}
+                className={showMenu ? "fas fa-times" : "fas fa-bars"}
+              ></i>
+            </span>
+
+            <SignInRegisterSearch
+              nameOfTheClass={signInRegisterSearchClassName}
+              setShowMenu={setShowMenu}
+              showMenu={showMenu}
+              setShowSerch={setShowSerch}
+              showSearch={showSearch}
+            />
+
+            <h1 className="logo">
+              <NavItem linkTo="/" text="DressUp" />
+            </h1>
+
+            <div className="cart">
+              <NavItem
+                linkTo="#"
+                iconClass="fas fa-shopping-cart"
+                text="Cart"
+              />
+            </div>
+          </nav>
+
+          <SearchBox
+            nameOfTheClass={showSearch ? "search-box" : "inactive-search"}
+            showSearch={showSearch}
+            setShowSerch={setShowSerch}
+          />
+        </div>
       </OutsideAlerter>
     </>
   );
