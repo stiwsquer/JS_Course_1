@@ -9,6 +9,7 @@ export default function SignInRegisterSearch({
   setShowSerch,
   showSearch,
   nameOfTheClass,
+  searchRef,
 }) {
   const handleShowMenu = () => setShowMenu((prev) => !prev);
   return (
@@ -29,8 +30,9 @@ export default function SignInRegisterSearch({
       <li
         onClick={() => {
           setShowMenu(!showMenu);
-          setShowSerch(!showSearch);
+          setShowSerch((prev) => !prev);
         }}
+        ref={searchRef}
       >
         <NavItem linkTo="#" iconClass="fas fa-search" text="Search" />
       </li>

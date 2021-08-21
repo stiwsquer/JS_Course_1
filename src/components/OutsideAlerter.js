@@ -4,14 +4,14 @@ import PropTypes from "prop-types";
 /**
  * Hook that alerts clicks outside of the passed ref
  */
-function useOutsideAlerter(ref, setShowSearch) {
+function useOutsideAlerter(ref, setShowSearch, searchRef) {
   useEffect(() => {
     /**
      * Alert if clicked on outside of element
      */
     function handleClickOutside(event) {
       if (ref.current && !ref.current.contains(event.target)) {
-        setShowSearch(false);
+        if (!searchRef.current.contains(event.target)) setShowSearch(false);
       }
     }
     // Bind the event listener
@@ -28,7 +28,7 @@ function useOutsideAlerter(ref, setShowSearch) {
  */
 function OutsideAlerter(props) {
   const wrapperRef = useRef(null);
-  useOutsideAlerter(wrapperRef, props.setShowSerch);
+  useOutsideAlerter(wrapperRef, props.setShowSerch, props.searchRef);
 
   return <div ref={wrapperRef}>{props.children}</div>;
 }
