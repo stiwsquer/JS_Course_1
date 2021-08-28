@@ -77,3 +77,13 @@ button {
     opacity: 1;
   }
 }
+
+nav {
+  @include flex(row, space-between, center);
+  width: 95%;
+  margin: auto;
+
+  li {
+    list-style: none;
+  }
+}

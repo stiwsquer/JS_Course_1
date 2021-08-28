@@ -1,3 +1,4 @@
+@import "../../styles/global.scss";
 @keyframes logo-animation {
   0% {
     transform: translateX(-50%) translateY(-200%);
@@ -43,20 +44,6 @@
   }
   animation: logo-animation 1s ease-in-out 0.5s forwards;
 }
-.signIn-register-search {
-  flex: 0;
-  @include flex(row, space-between, center);
-}
-
-.vertical-line {
-  opacity: 0.3;
-}
-
-.sections {
-  min-height: 5vh;
-  border-top: 0.1rem solid rgba($color: #000000, $alpha: 0.1);
-  border-bottom: 0.1rem solid rgba($color: #000000, $alpha: 0.1);
-}
 
 @media screen and (max-width: 1000px) {
   .logo {
@@ -70,28 +57,5 @@
     font-size: 2rem;
     font-size: $nav-links;
     z-index: 2;
-  }
-
-  .signIn-register-search {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 110vh;
-    background: white;
-    z-index: 1;
-    @include flex(column, center, center);
-
-    .vertical-line {
-      display: none;
-    }
-    li {
-      padding: 6rem;
-      font-size: 2rem;
-    }
-  }
-
-  .inactive-signIn-register-search {
-    display: none;
   }
 }

@@ -1,6 +1,7 @@
-import React, { useContext } from "react";
-import { SearchContext, useSearchContext } from "../context/SearchContext";
-import Navigation from "./NavigationV2";
+import React from "react";
+import { useSearchContext } from "../../context/SearchContext";
+import Navigation from "../Navigation/NavigationV2";
+import "./style.scss";
 
 export default function Header(props) {
   const [input] = useSearchContext();

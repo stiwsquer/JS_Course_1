@@ -1,7 +1,7 @@
 import React from "react";
-import Input from "./Input";
-// import Select from "react-select";
-import Select from "./Select";
+import Input from "../Input/Input";
+import Select from "../Select/Select";
+import "./style.scss";
 export default function Register({ months }) {
   const countryOptions = [
     { key: "af", value: "af", text: "Afghanistan" },

@@ -1,5 +1,6 @@
 import React from "react";
-import Input from "./Input";
+import Input from "../Input/Input";
+import "./style.scss";
 
 export default function NewsletterForm(props) {
   return (

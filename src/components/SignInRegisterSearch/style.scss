@@ -1,0 +1,34 @@
+@import "../../styles/global.scss";
+.signIn-register-search {
+  flex: 0;
+  @include flex(row, space-between, center);
+}
+
+.vertical-line {
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 1000px) {
+  .signIn-register-search {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 110vh;
+    background: white;
+    z-index: 1;
+    @include flex(column, center, center);
+
+    .vertical-line {
+      display: none;
+    }
+    li {
+      padding: 6rem;
+      font-size: 2rem;
+    }
+  }
+
+  .inactive-signIn-register-search {
+    display: none;
+  }
+}

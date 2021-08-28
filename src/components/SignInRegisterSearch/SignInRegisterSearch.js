@@ -1,13 +1,10 @@
 import React from "react";
-import NavItem from "./NavItem";
-import OutsideAlerter from "./OutsideAlerter";
-
+import NavItem from "../NavItem/NavItem";
+import "./style.scss";
 export default function SignInRegisterSearch({
-  mobileMenuStyle,
   setShowMenu,
   showMenu,
   setShowSerch,
-  showSearch,
   nameOfTheClass,
   searchRef,
 }) {

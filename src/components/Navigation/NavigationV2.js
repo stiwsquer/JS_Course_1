@@ -1,8 +1,9 @@
 import React, { useLayoutEffect, useState, useContext, useRef } from "react";
-import NavItem from "./NavItem";
-import OutsideAlerter from "./OutsideAlerter";
-import SearchBox from "./SearchBox";
-import SignInRegisterSearch from "./SignInRegisterSearch";
+import "./style.scss";
+import NavItem from "../NavItem/NavItem";
+import OutsideAlerter from "../OutsideAlerter/OutsideAlerter";
+import SearchBox from "../SearchBox/SearchBox";
+import SignInRegisterSearch from "../SignInRegisterSearch/SignInRegisterSearch";
 
 export default function Navigation() {
   const [showMenu, setShowMenu] = useState(false);

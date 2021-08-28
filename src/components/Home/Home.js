@@ -1,8 +1,8 @@
 import React from "react";
-import gallery1 from "../images/gallery-1.2.jpg";
-import gallery2 from "../images/gallery-2.1.jpg";
-import gallery3 from "../images/gallery-3.1.jpg";
-import home_intro from "../images/home-intro_1.jpg";
+import "./style.scss";
+import gallery1 from "../../images/gallery-1.2.jpg";
+import gallery2 from "../../images/gallery-2.1.jpg";
+import gallery3 from "../../images/gallery-3.1.jpg";
 
 export default function Home(props) {
   return (

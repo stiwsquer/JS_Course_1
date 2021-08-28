@@ -1,0 +1,5 @@
+@import "../../styles/global.scss";
+.input-wrapper {
+  @include flex(column, center, flex-start);
+  // flex: 1 1 40rem;
+}
