@@ -21,7 +21,7 @@ export default function Select({
       >
         {options.map((item) => {
           return (
-            <option key={item.value} value={item.value}>
+            <option key={item.key} value={item.value}>
               {item.text}
             </option>
           );

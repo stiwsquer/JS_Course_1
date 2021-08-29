@@ -21,10 +21,19 @@
     text-align: center;
     white-space: nowrap;
     list-style: none;
-  }
-
-  a:hover {
-    color: #f8bb99;
+    a {
+      transition: all 0.4s ease-in-out;
+      transform: scale(1);
+    }
+    a:hover {
+      transform: scale(1.2);
+      padding: 1rem;
+      border-radius: 1.5rem;
+      background: rgba($color: #202020, $alpha: 1);
+      // background: #161616;
+      color: white;
+      font-weight: 900;
+    }
   }
 }
 .burger,

@@ -3,6 +3,7 @@ import "./style.scss";
 import gallery1 from "../../images/gallery-1.2.jpg";
 import gallery2 from "../../images/gallery-2.1.jpg";
 import gallery3 from "../../images/gallery-3.1.jpg";
+import Button from "../Button/Button";
 
 export default function Home(props) {
   return (
@@ -28,7 +29,7 @@ export default function Home(props) {
           OUT - COME SEE WHY DRESS UP IS ONE OF THE FASTEST GROWING ONLINE DRESS
           BOUTIQUES IN THE UNITED STATES!{" "}
         </p>
-        <button>SHOP OUR NEWEST ARRIVALS</button>
+        <Button>SHOP OUR NEWEST ARRIVALS</Button>
       </section>
       <section className="home-gallery">
         <div className="gallery-new-shoes">
@@ -37,7 +38,7 @@ export default function Home(props) {
             We just dropped new fall shoe styles, and they are all ON SALE! Shop
             new combat boots, booties, mules, sneakers & more!
           </p>
-          <button>SHOP SHOES</button>
+          <Button>SHOP SHOES</Button>
         </div>
         <div className="gallery-accessories">
           <h2>Accessories</h2>
@@ -46,7 +47,7 @@ export default function Home(props) {
             perfect trendy handbag, dainty gold necklace, coin bracelet or
             statement earrings will upgrade any look.
           </p>
-          <button>SHOP ACCESSORIES</button>
+          <Button>SHOP ACCESSORIES</Button>
         </div>
         <img className="gallery1" src={gallery1} />
         <img className="gallery2" src={gallery2} />

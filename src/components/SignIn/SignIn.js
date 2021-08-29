@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button/Button";
 import Input from "../Input/Input";
 import NewCustomerInfo from "../NewCustomerInfo/NewCustomerInfo";
 import "./style.scss";
@@ -23,8 +24,7 @@ export default function SignIn() {
         >
           Password:
         </Input>
-
-        <button>SIGN IN</button>
+        <Button>SIGN IN</Button>
         <a href="#">Forgot your password?</a>
       </form>
       <NewCustomerInfo />

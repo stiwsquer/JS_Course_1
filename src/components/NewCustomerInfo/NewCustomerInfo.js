@@ -1,3 +1,4 @@
+import Button from "../Button/Button";
 import React from "react";
 import "./style.scss";
 
@@ -14,7 +15,7 @@ export default function NewCustomerInfo() {
           <li>Track new orders</li>
           <li>Save items to your Wish List</li>
         </ul>
-        <button>CREATE ACCOUNT</button>
+        <Button>CREATE ACCOUNT</Button>
       </div>
     </div>
   );

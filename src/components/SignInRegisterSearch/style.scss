@@ -2,6 +2,20 @@
 .signIn-register-search {
   flex: 0;
   @include flex(row, space-between, center);
+
+  a {
+    transition: all 0.4s ease-in-out;
+    translate: scale(1);
+  }
+  a:hover {
+    translate: scale(1.2);
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background: rgba($color: #202020, $alpha: 1);
+    // background: #161616;
+    color: white;
+    font-weight: 900;
+  }
 }
 
 .vertical-line {

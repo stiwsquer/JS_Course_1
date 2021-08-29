@@ -10,11 +10,21 @@ $gradient: linear-gradient(left, #38d39f, #38a4d3);
 $background-color: #154353;
 $gray-text: #2c2c2c;
 
+@font-face {
+  font-family: "Karla-400";
+  src: url("../fonts/karla/Karla-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Karla-300";
+  src: url("../fonts/karla/Karla-Light.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Karla", sans-serif;
+  font-family: "Karla-300", sans-serif;
 }
 
 html {
@@ -30,25 +40,18 @@ a {
   color: black;
 }
 
-h1 {
-  font-size: $header1;
+a,
+p {
+  font-family: "Karla-300", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Karla-400", sans-serif;
 }
 
-button {
-  background: #202020;
-  color: white;
-  border: none;
-  outline: none;
-  padding: 1rem 3rem;
-  letter-spacing: 0.15rem;
-  font-weight: 900;
-  // align-self: center;
-  margin: 3rem 0rem 2rem 0rem;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.8;
-  }
+h1 {
+  font-size: $header1;
 }
 
 .fas {
@@ -60,13 +63,6 @@ button {
   flex-direction: $direction;
   justify-content: $justify;
   align-items: $align;
-}
-.input-wrapper {
-  @include flex(column, center, flex-start);
-}
-
-.select-wrapper {
-  @include flex(column, stretch, flex-start);
 }
 
 @keyframes opening {

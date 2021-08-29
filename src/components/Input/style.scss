@@ -1,5 +1,17 @@
 @import "../../styles/global.scss";
 .input-wrapper {
   @include flex(column, center, flex-start);
-  // flex: 1 1 40rem;
+
+  label {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  input {
+    outline: none;
+    border: 0.1rem solid rgba($color: #000000, $alpha: 0.7);
+    padding: 1rem;
+    width: 30vw;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
 }

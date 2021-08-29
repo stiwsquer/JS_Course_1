@@ -1,11 +1,19 @@
 import React, { useContext } from "react";
 import { BrowserRouter as NavLink, Link } from "react-router-dom";
-export default function NavItem(props) {
+export default function NavItem({
+  linkTo,
+  iconClass,
+  text,
+  onClickFunction,
+  reference,
+}) {
   return (
-    <Link to={props.linkTo}>
-      <i className={props.iconClass}></i>
-      {props.iconClass !== null && " "}
-      {props.text}
+    // <li onClick={onClickFunction} ref={reference}>
+    <Link to={linkTo}>
+      <i className={iconClass}></i>
+      {iconClass !== null && " "}
+      {text}
     </Link>
+    // </li>
   );
 }

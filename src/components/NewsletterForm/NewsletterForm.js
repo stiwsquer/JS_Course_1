@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../Button/Button";
 import Input from "../Input/Input";
 import "./style.scss";
 
@@ -15,7 +16,7 @@ export default function NewsletterForm(props) {
           inputId="email"
         />
 
-        <button>SUBSCRIBE</button>
+        <Button>SUBSCRIBE</Button>
       </div>
     </form>
   );

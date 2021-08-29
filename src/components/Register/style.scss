@@ -1,52 +1,34 @@
 @import "../../styles/global.scss";
 .register {
   min-height: 100vh;
-  width: 50vw;
+  width: 80vw;
   margin: auto;
-  //   background: red;
   font-size: $small-text;
   @include flex(row, center, center);
   form {
-    @include flex(row, center, center);
-    flex-wrap: wrap;
-    .input-wrapper,
-    .select-wrapper {
-      flex: 1 1 40rem;
+    @include flex(column, center, center);
+    .form-wrapper {
+      @include flex(row, center, center);
+      flex-wrap: wrap;
+      margin: 1rem 0rem;
     }
+
     margin-top: 10rem;
+    margin-bottom: 5rem;
   }
 
-  label {
-    line-height: 1.5;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
-  }
-
-  button {
-    margin: 8rem 1rem;
-  }
-
-  select,
-  input {
-    padding: 1rem 30rem 1rem 1rem;
-    margin: 0rem;
-    background: white;
-
-    outline: none;
-    border: 0.1rem solid rgba($color: #000000, $alpha: 0.5);
-    // margin-right: 2rem;
-  }
-
-  select {
-    padding: 1rem 33rem 1rem 1rem;
+  .input-wrapper,
+  .select-wrapper {
+    margin-bottom: 2rem;
+    padding: 0rem 1rem;
   }
 }
 
-@media screen and (max-width: 515px) {
+@media screen and (max-width: 800px) {
   .register {
-    select,
-    input {
-      padding-right: 10rem;
+    input,
+    select {
+      width: 80vw;
     }
   }
 }

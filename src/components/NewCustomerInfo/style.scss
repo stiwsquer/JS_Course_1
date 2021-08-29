@@ -1,9 +1,13 @@
 @import "../../styles/global.scss";
 .new-customer-info {
-  flex: 0 0 40rem;
+  flex: 0 1 40rem;
   padding: 3rem;
 
   margin-bottom: 3rem;
+  button {
+    margin: 2rem 0rem 0rem 0rem;
+  }
+
   li {
     margin: 0.5rem 4rem;
   }
