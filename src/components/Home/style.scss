@@ -1,100 +1,10 @@
 @import "../../styles/global.scss";
 .home-intro {
   min-height: 100vh;
-  // background-image: url("../images/home-intro_1.jpg");
   background-image: url("../../images/home-intro_1.jpg");
+  //Relative imports outside of src/ are not supported:
+  // background-image: url("../../../public/img/home/home-intro_1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-.home-description {
-  min-height: 40vh;
-  width: 95%;
-  margin: auto;
-  text-align: center;
-  line-height: 3rem;
-  @include flex(column, center, center);
-  h2 {
-    font-size: $header3;
-    margin: 4rem;
-  }
-  p {
-    font-size: $small-text;
-  }
-  button {
-    margin: 4rem;
-  }
-}
-
-.home-gallery {
-  display: grid;
-  // gap: 3rem;
-  min-height: 100vh;
-  grid-template-columns: repeat(3, 1fr);
-  width: 95%;
-  margin: auto;
-
-  p {
-    margin: 0rem 6rem;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .gallery1 {
-    grid-column: 1/2;
-    grid-row: 1/3;
-  }
-  .gallery2 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-  .gallery3 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-  .gallery-new-shoes {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-
-  .gallery-accessories {
-    grid-column: 3/4;
-    grid-row: 2/3;
-  }
-
-  .gallery-accessories,
-  .gallery-new-shoes {
-    @include flex(column, center, center);
-    text-align: center;
-    font-size: $small-text;
-    h2 {
-      margin: 2rem;
-    }
-  }
-  button {
-    margin-top: 2rem;
-  }
-}
-@media screen and (max-width: 900px) {
-  .home-gallery {
-    // width: 100vw;
-    img,
-    div {
-      grid-row: auto;
-      grid-column: auto;
-    }
-
-    p {
-      margin: 1rem;
-    }
-
-    .gallery1 {
-      display: none;
-    }
-
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  }
 }

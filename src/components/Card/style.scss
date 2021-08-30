@@ -1,0 +1,85 @@
+@import "../../styles/global.scss";
+.card {
+  //   width: 25vw;
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.fig-caption {
+  //   display: none;
+  position: absolute;
+  bottom: 0;
+  font-size: 1.5rem;
+  width: 100%;
+  min-height: 0%;
+  text-align: center;
+  transition: all 0.4s ease-in-out;
+  background: white;
+  a {
+    transition: padding 0.4s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translateY(-50%) translateX(50%);
+    // padding: 2rem 2rem;
+    border: none;
+  }
+}
+
+.card-figure {
+  position: relative;
+
+  &:hover {
+    .card-image-alt {
+      display: block;
+    }
+
+    .card-image-normal {
+      display: none;
+    }
+
+    .fig-caption {
+      // display: block;
+      min-height: 15%;
+      a {
+        &::after {
+          content: "QUICK VIEW";
+        }
+
+        &:hover {
+          opacity: 0.5;
+        }
+        display: block;
+        padding: 0.5rem 1rem;
+
+        border: 0.1rem solid black;
+      }
+    }
+  }
+}
+
+.card-image-normal {
+  display: block;
+}
+
+.card-image-alt {
+  display: none;
+}
+
+.card-body {
+  h4 {
+    font-size: $small-text;
+    font-family: "Karla-200", sans-serif;
+    margin: 2rem 0rem;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  p {
+    font-size: $small-text;
+    font-family: "Karla-800", sans-serif;
+  }
+}
