@@ -3,7 +3,7 @@ import { useSearchContext } from "../../context/SearchContext";
 import Navigation from "../Navigation/NavigationV2";
 import "./style.scss";
 
-export default function Header(props) {
+export default function Header() {
   const [input] = useSearchContext();
 
   return (

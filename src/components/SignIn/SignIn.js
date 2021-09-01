@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import Input from "../Input/Input";
 import NewCustomerInfo from "../NewCustomerInfo/NewCustomerInfo";
@@ -24,8 +25,10 @@ export default function SignIn() {
         >
           Password:
         </Input>
-        <Button>SIGN IN</Button>
-        <a href="#">Forgot your password?</a>
+        <Button linkTo="#">SIGN IN</Button>
+        <Link className="remind-password" to="#">
+          Forgot your password?
+        </Link>
       </form>
       <NewCustomerInfo />
     </section>

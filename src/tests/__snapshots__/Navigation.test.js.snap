@@ -1,0 +1,201 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`simulates opening mobile menu 1`] = `
+<div>
+  <nav
+    className="nav-links"
+  >
+    <span
+      className="burger"
+      onClick={[Function]}
+    >
+      <i
+        className="fas fa-bars"
+        style={
+          Object {
+            "position": "",
+          }
+        }
+      />
+    </span>
+    <ul
+      className="signIn-register-search"
+    >
+      <li
+        onClick={[Function]}
+      >
+        <a
+          href="/signIn"
+          onClick={[Function]}
+        >
+          <i
+            className="fas fa-sign-in-alt"
+          />
+           
+          Sign in
+        </a>
+      </li>
+      <li
+        className="vertical-line"
+      >
+        |
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <a
+          href="/register"
+          onClick={[Function]}
+        >
+          <i />
+          Register
+        </a>
+      </li>
+      <li
+        className="vertical-line"
+      >
+        |
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          <i
+            className="fas fa-search"
+          />
+           
+          Search
+        </a>
+      </li>
+    </ul>
+    <h1
+      className="logo"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <i />
+        DressUp
+      </a>
+    </h1>
+    <div
+      className="cart"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <i
+          className="fas fa-shopping-cart"
+        />
+         
+        Cart
+      </a>
+    </div>
+  </nav>
+</div>
+`;
+
+exports[`simulates opening mobile menu 2`] = `
+<div>
+  <nav
+    className="nav-links"
+  >
+    <span
+      className="burger"
+      onClick={[Function]}
+    >
+      <i
+        className="fas fa-times"
+        style={
+          Object {
+            "position": "fixed",
+          }
+        }
+      />
+    </span>
+    <ul
+      className="signIn-register-search"
+    >
+      <li
+        onClick={[Function]}
+      >
+        <a
+          href="/signIn"
+          onClick={[Function]}
+        >
+          <i
+            className="fas fa-sign-in-alt"
+          />
+           
+          Sign in
+        </a>
+      </li>
+      <li
+        className="vertical-line"
+      >
+        |
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <a
+          href="/register"
+          onClick={[Function]}
+        >
+          <i />
+          Register
+        </a>
+      </li>
+      <li
+        className="vertical-line"
+      >
+        |
+      </li>
+      <li
+        onClick={[Function]}
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          <i
+            className="fas fa-search"
+          />
+           
+          Search
+        </a>
+      </li>
+    </ul>
+    <h1
+      className="logo"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <i />
+        DressUp
+      </a>
+    </h1>
+    <div
+      className="cart"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <i
+          className="fas fa-shopping-cart"
+        />
+         
+        Cart
+      </a>
+    </div>
+  </nav>
+</div>
+`;

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`has proper className 1`] = `
+<Link
+  to="#"
+>
+  <i
+    className="fa-bars"
+  />
+   
+</Link>
+`;
+
+exports[`has proper className 2`] = `
+<Link
+  to="#"
+>
+  <i
+    className="fa-times"
+  />
+   
+</Link>
+`;
+
+exports[`renders proper text 1`] = `
+<Link
+  to="#"
+>
+  <i />
+  proper text
+</Link>
+`;
+
+exports[`renders proper text 2`] = `
+<Link
+  to="#"
+>
+  <i />
+  text
+</Link>
+`;

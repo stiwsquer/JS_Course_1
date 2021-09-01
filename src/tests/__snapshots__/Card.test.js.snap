@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card snapshot 1`] = `
+<div
+  className="card"
+>
+  <figure
+    className="card-figure"
+  >
+    <Link
+      className="card-image-link"
+      to="#"
+    >
+      <img
+        className=" card-image card-image-normal"
+      />
+      <img
+        className="card-image  card-image-alt"
+      />
+    </Link>
+    <figcaption
+      className="fig-caption"
+    >
+      <Link
+        to="#"
+      />
+    </figcaption>
+  </figure>
+  <div
+    className="card-body"
+  >
+    <Link
+      to="#"
+    >
+      <h4
+        className="card-title"
+      />
+    </Link>
+    <p
+      className="card-text"
+    />
+  </div>
+  <div
+    className="card-swatches"
+  />
+</div>
+`;
+
+exports[`Card snapshot 2`] = `
+<div
+  className="card"
+>
+  <figure
+    className="card-figure"
+  >
+    <Link
+      className="card-image-link"
+      to="#"
+    >
+      <img
+        className=" card-image card-image-normal"
+      />
+      <img
+        className="card-image  card-image-alt"
+      />
+    </Link>
+    <figcaption
+      className="fig-caption"
+    >
+      <Link
+        to="#"
+      />
+    </figcaption>
+  </figure>
+  <div
+    className="card-body"
+  >
+    <Link
+      to="#"
+    >
+      <h4
+        className="card-title"
+      />
+    </Link>
+    <p
+      className="card-text"
+    />
+  </div>
+  <div
+    className="card-swatches"
+  />
+</div>
+`;

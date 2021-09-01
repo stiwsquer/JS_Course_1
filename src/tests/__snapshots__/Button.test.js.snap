@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button snapshot - mount 1`] = `
+<a
+  href="/"
+  onClick={[Function]}
+>
+  <button
+    className="submitButton"
+    onClick={[Function]}
+    type="submit"
+  />
+</a>
+`;
+
+exports[`Button snapshot - render 1`] = `
+<a
+  href="/"
+>
+  <button
+    class="submitButton"
+    type="submit"
+  />
+</a>
+`;
+
+exports[`Button snapshot - shallow 1`] = `
+<Router
+  history={
+    Object {
+      "action": "POP",
+      "block": [Function],
+      "createHref": [Function],
+      "go": [Function],
+      "goBack": [Function],
+      "goForward": [Function],
+      "length": 1,
+      "listen": [Function],
+      "location": Object {
+        "hash": "",
+        "pathname": "/",
+        "search": "",
+        "state": undefined,
+      },
+      "push": [Function],
+      "replace": [Function],
+    }
+  }
+>
+  <Button
+    linkTo="#"
+    nameOfTheClass="submitButton"
+    onClick={[Function]}
+    type="submit"
+  />
+</Router>
+`;

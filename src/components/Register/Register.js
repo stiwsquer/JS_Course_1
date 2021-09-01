@@ -105,7 +105,9 @@ export default function Register() {
             Zip/Postcode
           </Input>
         </div>
-        <Button type="submit">CREATE ACCOUNT</Button>
+        <Button linkTo="#" type="submit">
+          CREATE ACCOUNT
+        </Button>
       </form>
     </section>
   );

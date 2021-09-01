@@ -28,7 +28,6 @@ export default function Navigation() {
               className={showMenu ? "fas fa-times" : "fas fa-bars"}
             ></i>
           </span>
-
           <SignInRegisterSearch
             searchRef={searchRef}
             nameOfTheClass={signInRegisterSearchClassName}
@@ -46,14 +45,11 @@ export default function Navigation() {
             <NavItem linkTo="#" iconClass="fas fa-shopping-cart" text="Cart" />
           </div>
         </nav>
-
-        <OutsideAlerter setShowSerch={setShowSerch} searchRef={searchRef}>
-          <SearchBox
-            nameOfTheClass={showSearch ? "search-box" : "inactive-search"}
-            showSearch={showSearch}
-            setShowSerch={setShowSerch}
-          />
-        </OutsideAlerter>
+        {showSearch ? (
+          <OutsideAlerter setShowSerch={setShowSerch} searchRef={searchRef}>
+            <SearchBox nameOfTheClass="search-box" />
+          </OutsideAlerter>
+        ) : null}
       </div>
     </>
   );

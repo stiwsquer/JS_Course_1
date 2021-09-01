@@ -16,7 +16,7 @@ export default function NewsletterForm(props) {
           inputId="email"
         />
 
-        <Button>SUBSCRIBE</Button>
+        <Button linkTo="#">SUBSCRIBE</Button>
       </div>
     </form>
   );

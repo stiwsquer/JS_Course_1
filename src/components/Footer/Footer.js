@@ -7,7 +7,7 @@ export default function Footer() {
     <footer>
       <div className="footer-wrapper">
         <h1>
-          <NavItem text="DressUp" linkTo="#" /> &copy;
+          <NavItem text="DressUp" linkTo="/" /> &copy;
         </h1>
         <ul>
           <li>

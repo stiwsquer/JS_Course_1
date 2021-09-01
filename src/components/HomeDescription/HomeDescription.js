@@ -21,9 +21,9 @@ export default function HomeDescription() {
         SHIPPING ON ALL ORDERS OVER $49, AND FEEL FREE TO REACH OUT TO US AT
         678.989.2006 WITH ANY QUESTIONS. DON&apos;T MISS OUT - COME SEE WHY
         DRESS UP IS ONE OF THE FASTEST GROWING ONLINE DRESS BOUTIQUES IN THE
-        UNITED STATES!{" "}
+        UNITED STATES!
       </p>
-      <Button>SHOP OUR NEWEST ARRIVALS</Button>
+      <Button linkTo="#">SHOP OUR NEWEST ARRIVALS</Button>
     </section>
   );
 }

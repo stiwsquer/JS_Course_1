@@ -36,36 +36,6 @@ export default function SignInRegisterSearch({
       >
         <NavItem linkTo="#" iconClass="fas fa-search" text="Search" />
       </li>
-    </ul>
-
-    // <ul className={nameOfTheClass}>
-    //   <NavItem
-    //     onClickFunction={handleShowMenu}
-    //     linkTo="/signIn"
-    //     iconClass="fas fa-sign-in-alt"
-    //     text="Sign in"
-    //   />
-
-    //   <li className="vertical-line">|</li>
-
-    //   <NavItem
-    //     onClickFunction={handleShowMenu}
-    //     linkTo="/register"
-    //     text="Register"
-    //   />
-
-    //   <li className="vertical-line">|</li>
-
-    //   <NavItem
-    //     onClickFunction={() => {
-    //       setShowMenu(!showMenu);
-    //       setShowSerch((prev) => !prev);
-    //     }}
-    //     reference={searchRef}
-    //     linkTo="#"
-    //     iconClass="fas fa-search"
-    //     text="Search"
-    //   />
-    // </ul>
+    </ul>  
   );
 }

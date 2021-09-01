@@ -15,7 +15,7 @@ export default function NewCustomerInfo() {
           <li>Track new orders</li>
           <li>Save items to your Wish List</li>
         </ul>
-        <Button>CREATE ACCOUNT</Button>
+        <Button linkTo="/register">CREATE ACCOUNT</Button>
       </div>
     </div>
   );

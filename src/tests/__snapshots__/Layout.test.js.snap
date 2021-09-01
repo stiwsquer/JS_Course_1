@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layour snapshot - shallow 1`] = `
+<BrowserRouter>
+  <Header />
+  <main>
+    <Switch>
+      <Route
+        path="/signIn"
+      >
+        <SignIn />
+      </Route>
+      <Route
+        path="/register"
+      >
+        <Register />
+      </Route>
+      <Route
+        exact={true}
+        path="/"
+      >
+        <Home />
+      </Route>
+    </Switch>
+  </main>
+  <NewsletterForm />
+  <Footer />
+</BrowserRouter>
+`;

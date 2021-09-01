@@ -8,7 +8,7 @@ import NewsletterForm from "../NewsletterForm/NewsletterForm";
 import SignIn from "../SignIn/SignIn";
 import Register from "../Register/Register";
 
-export default function Layout(props) {
+export default function Layout() {
   return (
     <Router>
       <Header />

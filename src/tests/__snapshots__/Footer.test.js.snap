@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer snapshot - shallow 1`] = `
+<footer>
+  <div
+    className="footer-wrapper"
+  >
+    <h1>
+      <NavItem
+        linkTo="/"
+        text="DressUp"
+      />
+       ©
+    </h1>
+    <ul>
+      <li>
+        <NavItem
+          iconClass="fab fa-twitter social-media"
+          linkTo="#"
+        />
+      </li>
+      <li>
+        <NavItem
+          iconClass="fab fa-instagram social-media"
+          linkTo="#"
+        />
+      </li>
+      <li>
+        <NavItem
+          iconClass="fab fa-youtube social-media"
+          linkTo="#"
+        />
+      </li>
+    </ul>
+  </div>
+</footer>
+`;

@@ -2,8 +2,6 @@
 .home-intro {
   min-height: 100vh;
   background-image: url("../../images/home-intro_1.jpg");
-  //Relative imports outside of src/ are not supported:
-  // background-image: url("../../../public/img/home/home-intro_1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

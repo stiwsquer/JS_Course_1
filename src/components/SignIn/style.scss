@@ -14,8 +14,11 @@
   button {
     margin: 1rem 0rem;
   }
-  a {
+  .remind-password {
     text-decoration: underline;
+    &:hover {
+      opacity: 0.5;
+    }
   }
   margin: 5rem;
 

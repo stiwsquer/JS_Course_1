@@ -1,0 +1,119 @@
+[
+  [
+    {
+      "src": "./img/products/1.JPG",
+      "srcHover": "./img/products/1.2.webp",
+      "imgAlt": "Image of women in a dress",
+      "title": "Fiercely Fabulous Leopard Ruched Mini Dress",
+      "text": "$44.00",
+      "backgroundColor": "url(\"https://cdn11.bigcommerce.com/s-3y69bgeked/images/stencil/768w/attribute_value_images/73764.preview.jpg?t=1630492842)\""
+    }
+  ],
+
+  [
+    {
+      "src": "./img/products/2.webp",
+      "srcHover": "./img/products/2.1.webp",
+      "imgAlt": "Image of women in a dress",
+      "title": "Tame My Heart Leopard Tie-Front Dress",
+      "text": "$44.00",
+      "backgroundColor": "url(\"https://cdn11.bigcommerce.com/s-3y69bgeked/images/stencil/22x22/attribute_value_images/73756.preview.jpg?t=1630175002\")"
+    }
+  ],
+
+  [
+    {
+      "src": "./img/products/3.webp",
+      "srcHover": "./img/products/3.1.webp",
+      "imgAlt": "Image of women in a dress",
+      "title": "Keepin' It Chic Tiered Dress",
+      "text": "$44.00",
+      "backgroundColor": "#e8d7bc"
+    }
+  ],
+  [
+    {
+      "src": "./img/products/4.webp",
+      "srcHover": "./img/products/4.1.JPG",
+      "imgAlt": "Image of women in a dress",
+      "title": "Walk The Walk Mini Skirt",
+      "text": "$44.00",
+      "backgroundColor": "black"
+    }
+  ],
+  [
+    {
+      "src": "./img/products/9.jpg",
+      "srcHover": "./img/products/9.1.jpg",
+      "imgAlt": "Image of women in a dress",
+      "title": "Zena Tiered Tank Dress",
+      "text": "$44.00",
+      "backgroundColor": "olive"
+    },
+    {
+      "src": "./img/products/9.2.jpg",
+      "srcHover": "./img/products/9.3.jpg",
+      "imgAlt": "Image of women in a dress",
+      "title": "Zena Tiered Tank Dress",
+      "text": "$44.00",
+      "backgroundColor": "#588FC3"
+    },
+    {
+      "src": "./img/products/9.4.jpg",
+      "srcHover": "./img/products/9.5.jpg",
+      "imgAlt": "Image of women in a dress",
+      "title": "Zena Tiered Tank Dress",
+      "text": "$44.00",
+      "backgroundColor": "#B7410E"
+    }
+  ],
+  [
+    {
+      "src": "./img/products/5.JPG",
+      "srcHover": "./img/products/5.1.JPG",
+      "imgAlt": "Image of women in a dress",
+      "title": "Just The One Floral Dress - Mustard",
+      "text": "$44.00",
+      "backgroundColor": "url(\"https://cdn11.bigcommerce.com/s-3y69bgeked/images/stencil/768w/attribute_value_images/73734.preview.jpg?t=1630513174\")"
+    }
+  ],
+
+  [
+    {
+      "src": "./img/products/6.webp",
+      "srcHover": "./img/products/6.1.webp",
+      "imgAlt": "Image of women in a dress",
+      "title": "Iconic Style Tie-Front Blouse",
+      "text": "$44.00",
+      "backgroundColor": "#d9cfc8"
+    },
+    {
+      "src": "./img/products/6.2.webp",
+      "srcHover": "./img/products/6.3.JPG",
+      "imgAlt": "Image of women in a dress",
+      "title": "Iconic Style Tie-Front Blouse",
+      "text": "$44.00",
+      "backgroundColor": "black"
+    }
+  ],
+  [
+    {
+      "src": "./img/products/7.JPG",
+      "srcHover": "./img/products/7.1.JPG",
+      "imgAlt": "Image of women in a dress",
+      "title": "Wild Spirit Leopard Babydoll Dress",
+      "text": "$44.00",
+      "backgroundColor": "url(\"https://cdn11.bigcommerce.com/s-3y69bgeked/images/stencil/22x22/attribute_value_images/73742.preview.jpg?t=1630173621\")"
+    }
+  ],
+  [
+    {
+      "src": "./img/products/8.webp",
+      "srcHover": "./img/products/8.1.webp",
+      "imgAlt": "Image of women in a dress",
+      "title": "Wild Impression Leopard Blouse",
+      "text": "$44.00",
+      "backgroundColor": "url(\"https://cdn11.bigcommerce.com/s-3y69bgeked/images/stencil/768w/attribute_value_images/73738.preview.jpg?t=1630509666 \")"
+    }
+  ]
+]
