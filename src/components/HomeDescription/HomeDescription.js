@@ -23,7 +23,7 @@ export default function HomeDescription() {
         DRESS UP IS ONE OF THE FASTEST GROWING ONLINE DRESS BOUTIQUES IN THE
         UNITED STATES!
       </p>
-      <Button linkTo="#">SHOP OUR NEWEST ARRIVALS</Button>
+      <Button>SHOP OUR NEWEST ARRIVALS</Button>
     </section>
   );
 }

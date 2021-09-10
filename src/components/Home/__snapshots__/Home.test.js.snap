@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home snapshot - render 1`] = `
+Array [
+  <section
+    class="home-intro"
+  />,
+  <section
+    class="home-description"
+  >
+    <h2>
+      Trendy Clothing & Accessories at Dress Up - An Online Dress Boutique
+    </h2>
+    <p>
+      DRESS UP IS A WOMEN'S CLOTHING BOUTIQUE CARRYING A VARIETY OF FITS, STYLES, AND PATTERNS FOR WOMEN OF ALL AGES, SHAPES, AND SIZES. WE OFFER A DIVERSE COLLECTION OF NEW PRODUCTS EVERY SINGLE WEEK, INCLUDING YOUR FAVORITE CLOTHING ITEMS: CUTE ROMPERS, MAXI DRESSES, KNIT SWEATERS, OVERSIZED TOPS, AND LIGHTWEIGHT CARDIGANS, AS WELL AS TRENDY SHOES, ACCESSORIES, JEWELRY, ACTIVEWEAR, LOUNGEWEAR, AND SO MUCH MORE. DRESS UP'S TRENDY, YET WEARABLE CLOTHES WILL HAVE YOU FEELING LIKE YOUR BEST SELF, NO MATTER WHERE YOU'RE HEADED. YOU CAN SHOP WITH US ONLINE OR AT ANY OF OUR RETAIL LOCATIONS ACROSS THE SOUTHEAST, INCLUDING STORES IN GEORGIA, ALABAMA, SOUTH CAROLINA, AND TENNESSEE. GET FREE SHIPPING ON ALL ORDERS OVER $49, AND FEEL FREE TO REACH OUT TO US AT 678.989.2006 WITH ANY QUESTIONS. DON'T MISS OUT - COME SEE WHY DRESS UP IS ONE OF THE FASTEST GROWING ONLINE DRESS BOUTIQUES IN THE UNITED STATES!
+    </p>
+    <button>
+      SHOP OUR NEWEST ARRIVALS
+    </button>
+  </section>,
+  <section
+    class="home-gallery"
+  >
+    <div
+      class="gallery-new-shoes"
+    >
+      <h2>
+        NEW SHOES
+      </h2>
+      <p>
+        We just dropped new fall shoe styles, and they are all ON SALE! Shop new combat boots, booties, mules, sneakers & more!
+      </p>
+      <button>
+        SHOP SHOES
+      </button>
+    </div>
+    <div
+      class="gallery-accessories"
+    >
+      <h2>
+        Accessories
+      </h2>
+      <p>
+        Take your fall outfit to the next level with new accessories! The perfect trendy handbag, dainty gold necklace, coin bracelet or statement earrings will upgrade any look.
+      </p>
+      <button>
+        SHOP ACCESSORIES
+      </button>
+    </div>
+    <img
+      class="gallery1"
+      src="./img/home/gallery/gallery-1.2.jpg"
+    />
+    <img
+      class="gallery2"
+      src="./img/home/gallery/gallery-2.1.jpg"
+    />
+    <img
+      class="gallery3"
+      src="./img/home/gallery/gallery-3.1.jpg"
+    />
+  </section>,
+  <section
+    class="home-products"
+  >
+    <div
+      class="products-title"
+    >
+      <span
+        class="horizontal-line"
+      />
+      <h2>
+        NEW PRODUCTS
+      </h2>
+      <span
+        class="horizontal-line"
+      />
+    </div>
+    <div
+      class="cards"
+    >
+      <div
+        class="sc-jSgvzq jJOCMs rec rec-carousel-wrapper "
+      >
+        <div
+          class="sc-eCstlR bwgQCB rec rec-carousel"
+          style="height:0"
+        >
+          <button
+            class="sc-bdfBQB eRmJbc rec rec-arrow rec rec-arrow-left"
+            disabled=""
+            tabindex="0"
+            type="button"
+          >
+            ❮
+          </button>
+          <div
+            class="sc-dlfnuX bVibPY rec rec-slider-container"
+          >
+            <div
+              class="sc-hKgJUU hUugPI rec rec-slider"
+              style="transition:all 500ms ease;left:0px;right:auto;top:auto"
+            >
+              <div
+                class="rec rec-swipable"
+                style="display:flex;flex-direction:row"
+              />
+            </div>
+          </div>
+          <button
+            class="sc-bdfBQB eRmJbc rec rec-arrow rec rec-arrow-right"
+            disabled=""
+            tabindex="0"
+            type="button"
+          >
+            ❯
+          </button>
+        </div>
+        <div
+          class="sc-iBPTik iHAfmq rec rec-pagination"
+        >
+          <button
+            class="sc-gKseQn jJKuoL rec rec-dot rec rec-dot_active"
+            tabindex="-1"
+            type="button"
+          />
+        </div>
+      </div>
+    </div>
+  </section>,
+]
+`;
+
+exports[`Home snapshot - shallow 1`] = `
+<Fragment>
+  <section
+    className="home-intro"
+  />
+  <HomeDescription />
+  <HomeGallery />
+  <HomeProducts />
+</Fragment>
+`;

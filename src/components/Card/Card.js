@@ -1,13 +1,17 @@
 import React from "react";
 import "./style.scss";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useRef } from "react";
+import Button from "../Button/Button";
+import CardModal from "../CardModal/CardModal";
 
 export default function Card({ linkTo, imagesSources, title, text }) {
   const [imgSrc, setImgSrc] = useState(imagesSources[0].src);
   const [imgSrcHover, setImgSrcHover] = useState(imagesSources[0].srcHover);
   const [imgAlt, setImgAlt] = useState(imagesSources[0].imgAlt);
-  const onInputRadioClick = (e) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleInputRadioClick = (e) => {
     setImgSrc(imagesSources[e.target.value].src);
     setImgSrcHover(imagesSources[e.target.value].srcHover);
     setImgAlt(imagesSources[e.target.value].imgAlt);
@@ -29,7 +33,19 @@ export default function Card({ linkTo, imagesSources, title, text }) {
           />
         </Link>
         <figcaption className="fig-caption">
-          <Link to={linkTo}></Link>
+          <Button
+            onClick={() => {
+              setIsModalOpen(true);
+            }}
+          ></Button>
+
+          <CardModal
+            open={isModalOpen}
+            setIsModalOpen={setIsModalOpen}
+            imagesSources={imagesSources}
+            title={title}
+            text={text}
+          ></CardModal>
         </figcaption>
       </figure>
       <div className="card-body">
@@ -43,7 +59,7 @@ export default function Card({ linkTo, imagesSources, title, text }) {
           return (
             <div key={index} className="radio">
               <input
-                onClick={onInputRadioClick}
+                onClick={handleInputRadioClick}
                 value={index}
                 id="radio1"
                 type="radio"

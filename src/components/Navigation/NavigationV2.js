@@ -46,7 +46,7 @@ export default function Navigation() {
           </div>
         </nav>
         {showSearch ? (
-          <OutsideAlerter setShowSerch={setShowSerch} searchRef={searchRef}>
+          <OutsideAlerter setShowElement={setShowSerch} searchRef={searchRef}>
             <SearchBox nameOfTheClass="search-box" />
           </OutsideAlerter>
         ) : null}

@@ -1,8 +1,13 @@
 import Button from "../Button/Button";
 import React from "react";
 import "./style.scss";
+import { useHistory } from "react-router-dom";
 
 export default function NewCustomerInfo() {
+  const history = useHistory();
+  const handleClick = () => {
+    history.push("/register");
+  };
   return (
     <div className="new-customer-info">
       <div className="new-customer-info-wrapper">
@@ -15,7 +20,7 @@ export default function NewCustomerInfo() {
           <li>Track new orders</li>
           <li>Save items to your Wish List</li>
         </ul>
-        <Button linkTo="/register">CREATE ACCOUNT</Button>
+        <Button onClick={handleClick}>CREATE ACCOUNT</Button>
       </div>
     </div>
   );

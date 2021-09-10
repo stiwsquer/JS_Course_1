@@ -11,7 +11,7 @@ export default function HomeGallery() {
           We just dropped new fall shoe styles, and they are all ON SALE! Shop
           new combat boots, booties, mules, sneakers & more!
         </p>
-        <Button linkTo="#">SHOP SHOES</Button>
+        <Button>SHOP SHOES</Button>
       </div>
       <div className="gallery-accessories">
         <h2>Accessories</h2>
@@ -20,7 +20,7 @@ export default function HomeGallery() {
           perfect trendy handbag, dainty gold necklace, coin bracelet or
           statement earrings will upgrade any look.
         </p>
-        <Button linkTo="#">SHOP ACCESSORIES</Button>
+        <Button>SHOP ACCESSORIES</Button>
       </div>
       <img className="gallery1" src="./img/home/gallery/gallery-1.2.jpg" />
       <img className="gallery2" src="./img/home/gallery/gallery-2.1.jpg" />

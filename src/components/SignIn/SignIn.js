@@ -8,24 +8,14 @@ export default function SignIn() {
   return (
     <section className="sign-in-page">
       <form className="sign-in-form">
-        <Input
-          isRequired={true}
-          inputType="email"
-          // labelText="Email Address:"
-          inputId="email"
-        >
+        <Input isRequired={true} inputType="email" inputId="email">
           Email Address:
         </Input>
 
-        <Input
-          isRequired={true}
-          inputType="password"
-          // labelText="Password:"
-          inputId="password"
-        >
+        <Input isRequired={true} inputType="password" inputId="password">
           Password:
         </Input>
-        <Button linkTo="#">SIGN IN</Button>
+        <Button>SIGN IN</Button>
         <Link className="remind-password" to="#">
           Forgot your password?
         </Link>
