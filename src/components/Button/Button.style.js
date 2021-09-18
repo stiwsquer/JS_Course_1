@@ -10,6 +10,6 @@ export const StyledButton = styled.button`
   font-weight: 900;
   cursor: pointer;
   &:hover {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 `;
