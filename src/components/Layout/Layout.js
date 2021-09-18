@@ -8,7 +8,7 @@ import NewsletterForm from "../NewsletterForm/NewsletterForm";
 import SignIn from "../SignIn/SignIn";
 import Register from "../Register/Register";
 
-export default function Layout() {
+export default React.memo(function Layout() {
   return (
     <Router>
       <Header />
@@ -29,4 +29,4 @@ export default function Layout() {
       <Footer />
     </Router>
   );
-}
+});

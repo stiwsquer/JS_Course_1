@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 import Input from "../Input/Input";
 import NewCustomerInfo from "../NewCustomerInfo/NewCustomerInfo";
 import "./style.scss";
-export default function SignIn() {
+export default React.memo(function SignIn() {
   return (
     <section className="sign-in-page">
       <form className="sign-in-form">
@@ -23,4 +23,4 @@ export default function SignIn() {
       <NewCustomerInfo />
     </section>
   );
-}
+});

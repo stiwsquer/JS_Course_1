@@ -3,7 +3,7 @@ import { useSearchContext } from "../../context/SearchContext";
 import Navigation from "../Navigation/NavigationV2";
 import "./style.scss";
 
-export default function Header() {
+export default React.memo(function Header() {
   const [input] = useSearchContext();
 
   return (
@@ -14,4 +14,4 @@ export default function Header() {
       <section className="sections"></section>
     </header>
   );
-}
+});

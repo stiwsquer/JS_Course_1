@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../Button/Button";
 import "./style.scss";
 
-export default function HomeGallery() {
+export default React.memo(function HomeGallery() {
   return (
     <section className="home-gallery">
       <div className="gallery-new-shoes">
@@ -27,4 +27,4 @@ export default function HomeGallery() {
       <img className="gallery3" src="./img/home/gallery/gallery-3.1.jpg" />
     </section>
   );
-}
+});

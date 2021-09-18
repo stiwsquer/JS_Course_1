@@ -33,7 +33,7 @@ it("contains paragraph", () => {
     )
   ).toBe(true);
 });
-
+ 
 it("HomeGallery snapshop - shallow", () => {
   const wrapper = shallow(
     <Router>

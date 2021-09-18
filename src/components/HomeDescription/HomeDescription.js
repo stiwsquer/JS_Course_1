@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../Button/Button";
 import "./style.scss";
-export default function HomeDescription() {
+export default React.memo(function HomeDescription() {
   return (
     <section className="home-description">
       <h2>
@@ -26,4 +26,4 @@ export default function HomeDescription() {
       <Button>SHOP OUR NEWEST ARRIVALS</Button>
     </section>
   );
-}
+});

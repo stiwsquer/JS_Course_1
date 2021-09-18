@@ -1,5 +1,164 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Home snapshot - mount 1`] = `
+Array [
+  <section
+    className="home-intro"
+  />,
+  <section
+    className="home-description"
+  >
+    <h2>
+      Trendy Clothing & Accessories at Dress Up - An Online Dress Boutique
+    </h2>
+    <p>
+      DRESS UP IS A WOMEN'S CLOTHING BOUTIQUE CARRYING A VARIETY OF FITS, STYLES, AND PATTERNS FOR WOMEN OF ALL AGES, SHAPES, AND SIZES. WE OFFER A DIVERSE COLLECTION OF NEW PRODUCTS EVERY SINGLE WEEK, INCLUDING YOUR FAVORITE CLOTHING ITEMS: CUTE ROMPERS, MAXI DRESSES, KNIT SWEATERS, OVERSIZED TOPS, AND LIGHTWEIGHT CARDIGANS, AS WELL AS TRENDY SHOES, ACCESSORIES, JEWELRY, ACTIVEWEAR, LOUNGEWEAR, AND SO MUCH MORE. DRESS UP'S TRENDY, YET WEARABLE CLOTHES WILL HAVE YOU FEELING LIKE YOUR BEST SELF, NO MATTER WHERE YOU'RE HEADED. YOU CAN SHOP WITH US ONLINE OR AT ANY OF OUR RETAIL LOCATIONS ACROSS THE SOUTHEAST, INCLUDING STORES IN GEORGIA, ALABAMA, SOUTH CAROLINA, AND TENNESSEE. GET FREE SHIPPING ON ALL ORDERS OVER $49, AND FEEL FREE TO REACH OUT TO US AT 678.989.2006 WITH ANY QUESTIONS. DON'T MISS OUT - COME SEE WHY DRESS UP IS ONE OF THE FASTEST GROWING ONLINE DRESS BOUTIQUES IN THE UNITED STATES!
+    </p>
+    <button>
+      SHOP OUR NEWEST ARRIVALS
+    </button>
+  </section>,
+  <section
+    className="home-gallery"
+  >
+    <div
+      className="gallery-new-shoes"
+    >
+      <h2>
+        NEW SHOES
+      </h2>
+      <p>
+        We just dropped new fall shoe styles, and they are all ON SALE! Shop new combat boots, booties, mules, sneakers & more!
+      </p>
+      <button>
+        SHOP SHOES
+      </button>
+    </div>
+    <div
+      className="gallery-accessories"
+    >
+      <h2>
+        Accessories
+      </h2>
+      <p>
+        Take your fall outfit to the next level with new accessories! The perfect trendy handbag, dainty gold necklace, coin bracelet or statement earrings will upgrade any look.
+      </p>
+      <button>
+        SHOP ACCESSORIES
+      </button>
+    </div>
+    <img
+      className="gallery1"
+      src="./img/home/gallery/gallery-1.2.jpg"
+    />
+    <img
+      className="gallery2"
+      src="./img/home/gallery/gallery-2.1.jpg"
+    />
+    <img
+      className="gallery3"
+      src="./img/home/gallery/gallery-3.1.jpg"
+    />
+  </section>,
+  <section
+    className="home-products"
+  >
+    <div
+      className="products-title"
+    >
+      <span
+        className="horizontal-line"
+      />
+      <h2>
+        NEW PRODUCTS
+      </h2>
+      <span
+        className="horizontal-line"
+      />
+    </div>
+    <div
+      className="cards"
+    >
+      <div
+        className="sc-jSgvzq jJOCMs rec rec-carousel-wrapper "
+        style={Object {}}
+      >
+        <div
+          className="sc-eCstlR bwgQCB rec rec-carousel"
+          size={
+            Object {
+              "height": 0,
+            }
+          }
+          style={
+            Object {
+              "height": 0,
+            }
+          }
+        >
+          <button
+            className="sc-bdfBQB eRmJbc rec rec-arrow rec rec-arrow-left"
+            disabled={true}
+            onClick={[Function]}
+            style={Object {}}
+            tabIndex={0}
+            type="button"
+          >
+            ❮
+          </button>
+          <div
+            className="sc-dlfnuX bVibPY rec rec-slider-container"
+          >
+            <div
+              className="sc-hKgJUU hUugPI rec rec-slider"
+              style={
+                Object {
+                  "left": "0px",
+                  "right": "auto",
+                  "top": "auto",
+                  "transition": "all 500ms ease",
+                }
+              }
+            >
+              <div
+                className="rec rec-swipable"
+                onMouseDown={[Function]}
+                style={
+                  Object {
+                    "display": "flex",
+                    "flexDirection": "row",
+                  }
+                }
+              />
+            </div>
+          </div>
+          <button
+            className="sc-bdfBQB eRmJbc rec rec-arrow rec rec-arrow-right"
+            disabled={true}
+            onClick={[Function]}
+            style={Object {}}
+            tabIndex={0}
+            type="button"
+          >
+            ❯
+          </button>
+        </div>
+        <div
+          className="sc-iBPTik iHAfmq rec rec-pagination"
+        >
+          <button
+            className="sc-gKseQn jJKuoL rec rec-dot rec rec-dot_active"
+            onClick={[Function]}
+            tabIndex={-1}
+            type="button"
+          />
+        </div>
+      </div>
+    </div>
+  </section>,
+]
+`;
+
 exports[`Home snapshot - render 1`] = `
 Array [
   <section

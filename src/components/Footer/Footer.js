@@ -2,7 +2,7 @@ import React from "react";
 import NavItem from "../NavItem/NavItem";
 import "./style.scss";
 
-export default function Footer() {
+export default React.memo(function Footer() {
   return (
     <footer>
       <div className="footer-wrapper">
@@ -23,4 +23,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+});

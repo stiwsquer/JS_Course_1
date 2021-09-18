@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-export default function Select({
+export default React.memo(function Select({
   isRequired,
   selectId,
   handleChange,
@@ -29,4 +29,4 @@ export default function Select({
       </select>
     </div>
   );
-}
+});

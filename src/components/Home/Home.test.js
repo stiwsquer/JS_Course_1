@@ -43,3 +43,12 @@ it("Home snapshot - render", () => {
   );
   expect(wrapper).toMatchSnapshot();
 });
+
+it("Home snapshot - mount", () => {
+  const wrapper = mount(
+    <Router>
+      <Home />
+    </Router>
+  );
+  expect(wrapper).toMatchSnapshot();
+});

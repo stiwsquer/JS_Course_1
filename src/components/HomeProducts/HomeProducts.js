@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import Carousel from "react-elastic-carousel";
 import "./style.scss";
 import Card from "../Card/Card";
-export default function HomeProducts() {
+export default React.memo(function HomeProducts() {
   const [cards, setCards] = useState([]);
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -50,4 +50,4 @@ export default function HomeProducts() {
       </div>
     </section>
   );
-}
+});

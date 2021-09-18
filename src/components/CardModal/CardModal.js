@@ -5,7 +5,7 @@ import "./style.scss";
 import OutsideAlerter from "../OutsideAlerter/OutsideAlerter";
 // import Slider from "react-slick";
 import Carousel from "react-elastic-carousel";
-export default function CardModal({
+export default React.memo(function CardModal({
   children,
   open,
   setIsModalOpen,
@@ -46,25 +46,28 @@ export default function CardModal({
             <Carousel breakPoints={breakPoints}>{images}</Carousel>
           </div>
           <div className="description">
-            sdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddd ddddddddddddddddddddddddddd
-            dddddddddddddddddddddddddddddddd
-            sdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddd ddddddddddddddddddddddddddd
-            dddddddddddddddddddddddddddddddd
-            sdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddd ddddddddddddddddddddddddddd
-            dddddddddddddddddddddddddddddddd
-            sdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddd ddddddddddddddddddddddddddd
-            dddddddddddddddddddddddddddddddd
-            sdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-            ddddddddddddddddddddddddddd ddddddddddddddddddddddddddd
-            dddddddddddddddddddddddddddddddd
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+            voluptate, voluptatum voluptates aperiam culpa sint, tenetur esse,
+            minus reiciendis praesentium recusandae deleniti error consequatur
+            rem mollitia dolorem perferendis at blanditiis sapiente quibusdam.
+            Enim nostrum non impedit magni at animi, facere, eos id distinctio
+            ipsa minus itaque earum! Ratione, molestias dolorum fugit expedita
+            libero veniam natus non perspiciatis aliquid sit ea provident
+            asperiores quas magnam molestiae, eaque at modi similique dolore!
+            Quae magni esse officiis deserunt necessitatibus. Itaque deleniti
+            quas ea, dignissimos tempore repudiandae minus debitis rem fugiat
+            exercitationem tenetur veritatis eaque expedita natus, nesciunt in
+            qui hic. Labore cupiditate, sunt ad, blanditiis nihil vel magni
+            expedita dolores dolore doloremque consequatur iure neque ab
+            explicabo perferendis natus error cumque. Laudantium velit quas
+            asperiores. Magnam culpa fuga nihil iusto eaque itaque nemo
+            necessitatibus exercitationem nostrum non, obcaecati dignissimos
+            tempore eveniet quibusdam iste neque at officia. Voluptate
+            temporibus architecto dolores laborum velit veritatis!
           </div>
         </div>
       </OutsideAlerter>
     </>,
     document.getElementById("portal")
   );
-}
+});

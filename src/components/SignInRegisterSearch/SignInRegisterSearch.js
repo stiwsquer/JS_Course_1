@@ -1,7 +1,7 @@
 import React from "react";
 import NavItem from "../NavItem/NavItem";
 import "./style.scss";
-export default function SignInRegisterSearch({
+export default React.memo(function SignInRegisterSearch({
   setShowMenu,
   showMenu,
   setShowSerch,
@@ -36,6 +36,6 @@ export default function SignInRegisterSearch({
       >
         <NavItem linkTo="#" iconClass="fas fa-search" text="Search" />
       </li>
-    </ul>  
+    </ul>
   );
-}
+});

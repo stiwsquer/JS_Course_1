@@ -5,7 +5,7 @@ import HomeDescription from "../HomeDescription/HomeDescription";
 import HomeGallery from "../HomeGallery/HomeGallery";
 import HomeProducts from "../HomeProducts/HomeProducts";
 
-export default function Home() {
+export default React.memo(function Home() {
   return (
     <>
       <section className="home-intro"></section>
@@ -14,4 +14,4 @@ export default function Home() {
       <HomeProducts />
     </>
   );
-}
+});

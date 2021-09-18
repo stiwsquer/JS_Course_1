@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 
-export default function Input({
+export default React.memo(function Input({
   isRequired,
   inputId,
   inputType,
@@ -25,4 +25,4 @@ export default function Input({
       />
     </div>
   );
-}
+});

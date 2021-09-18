@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 import Input from "../Input/Input";
 import Select from "../Select/Select";
 import "./style.scss";
-export default function Register() {
+export default React.memo(function Register() {
   const [countryOptions, setCountryOptions] = useState([]);
   const [months, setMonths] = useState([]);
 
@@ -109,4 +109,4 @@ export default function Register() {
       </form>
     </section>
   );
-}
+});

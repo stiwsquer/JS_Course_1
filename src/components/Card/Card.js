@@ -5,7 +5,12 @@ import { useState, useRef } from "react";
 import Button from "../Button/Button";
 import CardModal from "../CardModal/CardModal";
 
-export default function Card({ linkTo, imagesSources, title, text }) {
+export default React.memo(function Card({
+  linkTo,
+  imagesSources,
+  title,
+  text,
+}) {
   const [imgSrc, setImgSrc] = useState(imagesSources[0].src);
   const [imgSrcHover, setImgSrcHover] = useState(imagesSources[0].srcHover);
   const [imgAlt, setImgAlt] = useState(imagesSources[0].imgAlt);
@@ -78,4 +83,4 @@ export default function Card({ linkTo, imagesSources, title, text }) {
       </div>
     </div>
   );
-}
+});

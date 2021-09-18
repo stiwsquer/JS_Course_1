@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 import Input from "../Input/Input";
 import "./style.scss";
 
-export default function NewsletterForm(props) {
+export default React.memo(function NewsletterForm(props) {
   return (
     <form className="newsletter-form">
       <h4>Subscribe to our newsletter</h4>
@@ -13,11 +13,11 @@ export default function NewsletterForm(props) {
           isRequired={true}
           inputType="email"
           placeholder="Your email adress"
-          inputId="email"
+          inputId="email-newsletter"
         />
 
         <Button>SUBSCRIBE</Button>
       </div>
     </form>
   );
-}
+});

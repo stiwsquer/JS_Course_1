@@ -3,7 +3,7 @@ import React from "react";
 import "./style.scss";
 import { useHistory } from "react-router-dom";
 
-export default function NewCustomerInfo() {
+export default React.memo(function NewCustomerInfo() {
   const history = useHistory();
   const handleClick = () => {
     history.push("/register");
@@ -24,4 +24,4 @@ export default function NewCustomerInfo() {
       </div>
     </div>
   );
-}
+});

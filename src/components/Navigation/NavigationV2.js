@@ -5,7 +5,7 @@ import OutsideAlerter from "../OutsideAlerter/OutsideAlerter";
 import SearchBox from "../SearchBox/SearchBox";
 import SignInRegisterSearch from "../SignInRegisterSearch/SignInRegisterSearch";
 
-export default function Navigation() {
+export default React.memo(function Navigation() {
   const [showMenu, setShowMenu] = useState(false);
   const [showSearch, setShowSerch] = useState(false);
   const [width, height] = useWindowSize([0, 0]);
@@ -53,7 +53,7 @@ export default function Navigation() {
       </div>
     </>
   );
-}
+});
 
 function useWindowSize() {
   const [size, setSize] = useState([0, 0]);
