@@ -1,39 +1,32 @@
 @import "../../styles/global.scss";
 
-.home-products {
-  min-height: 0vh;
-  width: 95%;
-  margin: 5rem 2.5%;
-  margin-top: 10rem;
-}
+// .home-products {
+//   min-height: 0vh;
+//   width: 95%;
+//   margin: 5rem 2.5%;
+//   margin-top: 10rem;
+// }
 
-.products-title {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  margin-bottom: 4rem;
-  h2 {
-    flex: 1 1 auto;
-    font-size: 2rem;
-    letter-spacing: 0.5rem;
-    opacity: 0.8;
-  }
-  span {
-    flex: 6 1 auto;
-    height: 1px;
-    opacity: 0.2;
-    background: black;
-  }
-}
-
-.card {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 3rem;
-}
+// .products-title {
+//   text-align: center;
+//   display: flex;
+//   align-items: center;
+//   margin-bottom: 4rem;
+//   h2 {
+//     flex: 1 1 auto;
+//     font-size: 2rem;
+//     letter-spacing: 0.5rem;
+//     opacity: 0.8;
+//   }
+//   span {
+//     flex: 6 1 auto;
+//     height: 1px;
+//     opacity: 0.2;
+//     background: black;
+//   }
+// }
 
 // REACT-EASTIC-CAROUSEL
-
 // Arrows
 .rec.rec-arrow {
   background: transparent;

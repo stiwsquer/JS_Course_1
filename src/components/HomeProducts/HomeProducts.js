@@ -1,7 +1,13 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
-import Carousel from "react-elastic-carousel";
+
 import "./style.scss";
 import Card from "../Card/Card";
+import {
+  CustomCarousel,
+  ProductsSection,
+  ProductsTitle,
+} from "./HomeProducts.style";
+
 export default React.memo(function HomeProducts() {
   const [cards, setCards] = useState([]);
   const breakPoints = [
@@ -38,16 +44,13 @@ export default React.memo(function HomeProducts() {
   useEffect(getProducts, []);
 
   return (
-    <section className="home-products">
-      <div className="products-title">
+    <ProductsSection>
+      <ProductsTitle>
         <span className="horizontal-line"></span>
         <h2>NEW PRODUCTS</h2>
         <span className="horizontal-line"></span>
-      </div>
-
-      <div className="cards">
-        <Carousel breakPoints={breakPoints}>{cards}</Carousel>
-      </div>
-    </section>
+      </ProductsTitle>
+      <CustomCarousel breakPoints={breakPoints}>{cards}</CustomCarousel>
+    </ProductsSection>
   );
 });

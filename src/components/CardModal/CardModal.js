@@ -5,6 +5,14 @@ import "./style.scss";
 import OutsideAlerter from "../OutsideAlerter/OutsideAlerter";
 // import Slider from "react-slick";
 import Carousel from "react-elastic-carousel";
+import {
+  Overlay,
+  Modal,
+  ExitModalButton,
+  Slider,
+  Description,
+} from "./CardModal.style";
+
 export default React.memo(function CardModal({
   children,
   open,
@@ -36,7 +44,7 @@ export default React.memo(function CardModal({
       <OutsideAlerter setShowElement={setIsModalOpen}>
         <div className="modal">
           <Button
-            nameOfTheClass="close-modal-btn"
+            className="close-modal-btn"
             onClick={() => setIsModalOpen(false)}
           >
             <i className="fas fa-times"></i>
